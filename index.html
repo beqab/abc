@@ -105,7 +105,15 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-6">
-          <img src="./assets/images/Group (3).svg" />
+          <div class="nftSliderWrapper">
+            <img class="active" src="./assets/images/Group (3).svg" />
+            <img src="./assets/images/nftSlider/nft1.svg" />
+            <img src="./assets/images/nftSlider/nft2.svg" />
+            <img src="./assets/images/nftSlider/nft3.svg" />
+            <img src="./assets/images/nftSlider/nft4.svg" />
+            <img src="./assets/images/nftSlider/nft5.svg" />
+            <img src="./assets/images/nftSlider/nft6.svg" />
+          </div>
         </div>
         <div class="col-md-6 d-flex justify-content-center flex-column ">
           <h3 class="mb-5">About ABC community</h3>
@@ -547,6 +555,21 @@
       easing: "ease",
       once: false,
     });
+
+    // fadeinout slider
+    let activeSlider = 1
+    setInterval(() => {
+      // debugger
+      $(".nftSliderWrapper img").removeClass("active")
+      $(".nftSliderWrapper img").eq(activeSlider).addClass("active")
+      if (6 > activeSlider) {
+
+        activeSlider++
+      }
+      else {
+        activeSlider = 1
+      }
+    }, 4000)
 
 
 
