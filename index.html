@@ -142,78 +142,88 @@
         Character timeline
       </h3>
       <div class="owl-carousel owl-theme">
-        <div class="item">
-          <div class="nft_item nft_item1">
+        <div class="item nft_item1">
+          <div class="nft_item " data-id="0">
             <div class="timerWrapper">
+
               <div class="timeer">
 
               </div>
+              <span class="text-center extraData">
+                revile data
+              </span>
             </div>
             <img src="./assets/images/nft/nft1.svg" />
           </div>
-          <div class="mt-3"> <span class="price">Sold out </span></div>
+          <div class="mt-3 pricing"></div>
 
         </div>
-        <div class="item">
-          <div class="nft_item nft_item2">
+        <div class="item nft_item2">
+          <div class="nft_item  " data-id="1">
             <div class="timerWrapper">
 
               <div class="timeer">
 
               </div>
+              <span class="text-center extraData">
+                revile data
+              </span>
             </div>
             <img src="./assets/images/nft/nft1.svg" />
           </div>
-          <div class="mt-3"> <span class="price">Sold out </span></div>
+          <div class="mt-3 pricing"> </div>
 
         </div>
-        <div class="item">
-          <div class="nft_item nft_item3 hidden">
+        <div class="item  nft_item3">
+          <div class="nft_item hidden" data-id="2">
             <div class="timerWrapper">
 
               <div class="timeer">
 
               </div>
-              <span class="text-center">
+              <span class="text-center extraData">
                 revile data
               </span>
             </div>
             <img src="./assets/images/nftHidden.svg" />
-            <div class="mt-3"> <span class="price mr-2"> Price </span> <span class="blueColor">0.03 eth</span></div>
+            <div class="mt-3 pricing"> <span class="price mr-2"> Price </span> <span class="blueColor">0.03 eth</span>
+            </div>
 
 
           </div>
         </div>
-        <div class="item">
-          <div class="nft_item nft_item4 hidden">
+        <div class="item nft_item4">
+          <div class="nft_item  ">
             <div class="timerWrapper">
 
               <div class="timeer">
 
               </div>
-              <span class="text-center">
+              <span class="text-center extraData">
                 revile data
               </span>
             </div>
             <img src="./assets/images/nftHidden.svg" />
-            <div class="mt-3"> <span class="price mr-2"> Price </span> <span class="blueColor">0.03 eth</span></div>
+            <div class="mt-3 pricing"> <span class="price mr-2"> Price </span> <span class="blueColor">0.03 eth</span>
+            </div>
 
 
           </div>
         </div>
-        <div class="item">
-          <div class="nft_item nft_item5 hidden">
+        <div class="item  nft_item5">
+          <div class="nft_item hidden">
             <div class="timerWrapper">
 
               <div class="timeer">
 
               </div>
-              <span class="text-center">
+              <span class="text-center extraData">
                 revile data
               </span>
             </div>
             <img src="./assets/images/nftHidden.svg" />
-            <div class="mt-3"> <span class="price mr-2"> Price </span> <span class="blueColor">0.03 eth</span></div>
+            <div class="mt-3 pricing"> <span class="price mr-2"> Price </span> <span class="blueColor">0.03 eth</span>
+            </div>
 
           </div>
         </div>
@@ -450,6 +460,62 @@
     </div>
   </footer>
 
+  <div class="nftModal" style="display: flex;">
+    <div class="nftmodal_content">
+      <div class="modal_header d-flex justify-content-between align-items-center">
+        <span> About Character</span>
+        <svg class="pointer nftModal_close " width="40" height="40" viewBox="0 0 40 40" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.1"
+            d="M20 40C31.0457 40 40 31.0458 40 20.0001C40 8.95439 31.0457 0 20 0C8.95426 0 0 8.95439 0 20.0001C0 31.0458 8.95426 40 20 40Z"
+            fill="white" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M13.364 13.636C12.7782 14.2218 12.7782 15.1716 13.364 15.7574L17.6066 20L13.364 24.2426C12.7782 24.8284 12.7782 25.7782 13.364 26.364C13.9497 26.9497 14.8995 26.9497 15.4853 26.364L19.7279 22.1213L23.9706 26.364C24.5563 26.9497 25.5061 26.9497 26.0919 26.364C26.6777 25.7782 26.6777 24.8284 26.0919 24.2426L21.8492 20L26.0919 15.7574C26.6777 15.1716 26.6777 14.2218 26.0919 13.636C25.5061 13.0502 24.5563 13.0502 23.9706 13.636L19.7279 17.8787L15.4853 13.636C14.8995 13.0503 13.9497 13.0503 13.364 13.636Z"
+            fill="white" />
+        </svg>
+
+      </div>
+      <div class="nftModal_about d-flex flex-column justify-content-between">
+        <div>
+          <div class="nftModal_image text-center">
+            <!-- <img src="./assets/images/nftSlider/nft1.svg" /> -->
+            <video width="320" height="240" autoplay="1" loop>
+              <source class="video" src="./assets/video/glitch_1.mp4" type="video/mp4">
+              <!-- <source src="movie.ogg" type="video/ogg"> -->
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="nftModal_textBox">
+            <h6 class="modalTitle ">Glitch</h6>
+            <p class="modalDescription">Hey, I'm Glitch, a gaming guru and Metaverse enthusiast! Let me tell you
+              something: In this world, you
+              need to keep yourself sharp and ready for the challenges ahead. So charge your controller and turn on your
+              headset! We'll explore the endless path of this universe together!</p>
+          </div>
+        </div>
+
+        <a class="nftLink" href="#" target="_blank">
+
+          <svg class="pointer" width="506" height="63" viewBox="0 0 506 63" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="506" height="63" rx="31.5" fill="#2081E2" />
+            <path
+              d="M44.9999 31.4999C44.9999 39.5066 38.5067 45.9998 30.5 45.9998C22.4933 45.9998 16 39.5066 16 31.4999C16 23.4932 22.4933 17 30.5 17C38.5164 17 44.9999 23.4932 44.9999 31.4999Z"
+              fill="white" />
+            <path
+              d="M39.9715 33.0816V34.0189C39.9715 34.0678 39.9423 34.1166 39.8935 34.1459C39.6005 34.2728 38.6046 34.7317 38.1847 35.3078C37.1204 36.7822 36.31 38.8913 34.5036 38.8913H26.9461C24.2707 38.8913 22.0933 36.7139 22.0933 34.0287V33.9408C22.0933 33.8725 22.1519 33.8139 22.2202 33.8139H26.4285C26.5164 33.8139 26.575 33.892 26.5652 33.9701C26.536 34.2435 26.5848 34.5267 26.7117 34.7806C26.9656 35.2883 27.4831 35.6105 28.0397 35.6105H30.1292V33.9799H28.069C27.9616 33.9799 27.9029 33.853 27.9615 33.7748C27.981 33.7358 28.0104 33.7065 28.0397 33.6674C28.2349 33.394 28.5181 32.9644 28.7915 32.4664C28.977 32.1344 29.1625 31.7829 29.3089 31.4314C29.3382 31.363 29.3578 31.3045 29.3871 31.2361C29.4262 31.119 29.4652 31.0213 29.4945 30.9139C29.5238 30.826 29.5433 30.7284 29.5726 30.6405C29.6409 30.3378 29.6702 30.0253 29.6702 29.6934C29.6702 29.5664 29.6605 29.4297 29.6508 29.3028C29.641 29.1661 29.6312 29.0196 29.6117 28.8829C29.6019 28.756 29.5726 28.6388 29.553 28.5021C29.5237 28.3166 29.4847 28.1213 29.4359 27.9358L29.4164 27.8675C29.3774 27.7405 29.348 27.6136 29.3089 27.4867C29.1918 27.0766 29.0552 26.686 28.9087 26.3149C28.8599 26.1685 28.8012 26.022 28.7329 25.8853C28.645 25.6705 28.5571 25.4752 28.4692 25.2995C28.4302 25.2116 28.3911 25.1432 28.3521 25.0651C28.313 24.9772 28.2739 24.8894 28.2251 24.8015C28.1958 24.7331 28.1568 24.6746 28.1373 24.616L27.8834 24.1473C27.8443 24.0789 27.9029 24.0106 27.981 24.0301L29.5726 24.4597C29.5726 24.4597 29.5726 24.4597 29.5824 24.4597L29.7971 24.5183L30.0316 24.5867L30.1194 24.6062V23.6591C30.1194 23.2001 30.4905 22.8291 30.9396 22.8291C31.1642 22.8291 31.3692 22.917 31.5157 23.0732C31.6621 23.2197 31.7598 23.4247 31.7598 23.6591V25.0651L31.9258 25.1139C31.9356 25.1139 31.9551 25.1237 31.9649 25.1335C32.004 25.1628 32.0625 25.2116 32.1406 25.2702C32.1992 25.319 32.2676 25.3776 32.3457 25.4362C32.5019 25.5631 32.6776 25.7193 32.8827 25.9049C32.9315 25.9537 32.9901 26.0025 33.0389 26.0415C33.3026 26.2857 33.5857 26.5688 33.8689 26.8813C33.947 26.9692 34.0251 27.057 34.1032 27.1547C34.1813 27.2523 34.2594 27.3402 34.3375 27.4378C34.4352 27.5648 34.5329 27.6917 34.6207 27.8284C34.6598 27.8967 34.7086 27.9553 34.7477 28.0237C34.8649 28.1994 34.9624 28.3752 35.0601 28.551C35.0991 28.6291 35.1382 28.7267 35.1773 28.8146C35.2847 29.0489 35.3628 29.293 35.4214 29.5371C35.4409 29.586 35.4507 29.6445 35.4605 29.6934V29.7031C35.48 29.7715 35.48 29.8496 35.4898 29.9277C35.5093 30.1718 35.4995 30.4257 35.4507 30.6698C35.4312 30.7772 35.4019 30.8748 35.3628 30.9823C35.3238 31.0799 35.2945 31.1873 35.2457 31.2849C35.1578 31.49 35.0503 31.695 34.9234 31.8903C34.8843 31.9587 34.8356 32.0368 34.7868 32.1051C34.738 32.1832 34.6793 32.2516 34.6305 32.3199C34.5622 32.4078 34.4939 32.5055 34.4255 32.5836C34.3572 32.6715 34.2985 32.7593 34.2204 32.8375C34.1227 32.9546 34.0252 33.062 33.9275 33.1694C33.8689 33.2378 33.8005 33.3062 33.7419 33.3745C33.6736 33.4429 33.6151 33.5112 33.5565 33.5698C33.4588 33.6674 33.3709 33.7455 33.3026 33.8139L33.1366 33.9604C33.117 33.9799 33.078 33.9897 33.0487 33.9897H31.7793V35.6203H33.3807C33.7419 35.6203 34.0739 35.4933 34.3473 35.259C34.445 35.1809 34.8551 34.8196 35.3335 34.2923C35.353 34.2728 35.3726 34.263 35.3922 34.2533L39.8055 32.9742C39.8836 32.9351 39.9715 32.9937 39.9715 33.0816Z"
+              fill="#2081E2" />
+            <path
+              d="M177.334 38H183.158C185.398 38 186.902 36.768 186.902 34.912C186.902 33.744 186.134 32.624 184.982 32.128C185.622 31.584 186.038 30.736 186.038 29.984C186.038 28.208 184.598 27.024 182.438 27.024H177.334V38ZM179.478 31.408V28.944H182.438C183.318 28.944 183.894 29.44 183.894 30.176C183.894 30.912 183.318 31.408 182.438 31.408H179.478ZM179.478 36.08V33.328H183.174C184.118 33.328 184.758 33.888 184.758 34.72C184.758 35.536 184.118 36.08 183.158 36.08H179.478ZM195.636 30H193.716V34.752C193.716 35.824 192.932 36.528 191.764 36.528C190.596 36.528 189.812 35.824 189.812 34.752V30H187.892V34.976C187.892 36.928 189.348 38.224 191.54 38.224C192.324 38.224 193.188 37.904 193.716 37.408V38H195.636V30ZM198.407 40.976H200.471L204.791 30H202.727L200.759 35.024L198.775 30H196.727L199.783 37.488L198.407 40.976ZM210.069 38H212.213V30L217.605 38H219.957V27.024H217.813V35.008L212.421 27.024H210.069V38ZM225.502 38.224C228.11 38.224 229.838 36.528 229.838 34C229.838 31.472 228.11 29.776 225.502 29.776C222.894 29.776 221.166 31.472 221.166 34C221.166 36.528 222.894 38.224 225.502 38.224ZM225.502 36.528C224.046 36.528 223.086 35.52 223.086 34C223.086 32.48 224.046 31.472 225.502 31.472C226.958 31.472 227.918 32.48 227.918 34C227.918 35.52 226.958 36.528 225.502 36.528ZM232.573 38H234.525L235.885 32.832L237.261 38H239.213L241.965 30H239.949L238.269 35.824L236.781 30H234.989L233.501 35.824L231.821 30H229.805L232.573 38ZM250.752 38.224C253.36 38.224 255.088 36.528 255.088 34C255.088 31.472 253.36 29.776 250.752 29.776C248.144 29.776 246.416 31.472 246.416 34C246.416 36.528 248.144 38.224 250.752 38.224ZM250.752 36.528C249.296 36.528 248.336 35.52 248.336 34C248.336 32.48 249.296 31.472 250.752 31.472C252.208 31.472 253.168 32.48 253.168 34C253.168 35.52 252.208 36.528 250.752 36.528ZM256.08 38H258V33.248C258 32.176 258.784 31.472 259.952 31.472C261.12 31.472 261.904 32.176 261.904 33.248V38H263.824V33.024C263.824 31.072 262.368 29.776 260.176 29.776C259.392 29.776 258.528 30.096 258 30.592V30H256.08V38ZM274.378 38.224C277.802 38.224 280.09 35.936 280.09 32.512C280.09 29.088 277.802 26.8 274.378 26.8C270.954 26.8 268.666 29.088 268.666 32.512C268.666 35.936 270.954 38.224 274.378 38.224ZM274.378 36.304C272.234 36.304 270.81 34.784 270.81 32.512C270.81 30.24 272.234 28.72 274.378 28.72C276.522 28.72 277.946 30.24 277.946 32.512C277.946 34.784 276.522 36.304 274.378 36.304ZM285.812 29.776C284.836 29.776 283.764 30.224 283.156 30.88V30H281.236V40.976H283.156V37.12C283.764 37.776 284.836 38.224 285.812 38.224C288.34 38.224 290.036 36.528 290.036 34C290.036 31.472 288.34 29.776 285.812 29.776ZM285.62 31.472C287.124 31.472 288.116 32.48 288.116 34C288.116 35.52 287.124 36.528 285.62 36.528C284.148 36.528 283.156 35.52 283.156 34C283.156 32.48 284.148 31.472 285.62 31.472ZM295.205 38.224C297.157 38.224 298.821 37.04 299.349 35.28H297.397C297.029 36.08 296.149 36.624 295.205 36.624C293.957 36.624 292.997 35.792 292.821 34.528H299.381L299.541 34.368V34C299.541 31.472 297.813 29.776 295.205 29.776C292.597 29.776 290.869 31.472 290.869 34C290.869 36.528 292.597 38.224 295.205 38.224ZM292.949 32.928C293.317 31.936 294.133 31.376 295.205 31.376C296.277 31.376 297.093 31.936 297.461 32.928H292.949ZM300.689 38H302.609V33.248C302.609 32.176 303.393 31.472 304.561 31.472C305.729 31.472 306.513 32.176 306.513 33.248V38H308.433V33.024C308.433 31.072 306.977 29.776 304.785 29.776C304.001 29.776 303.137 30.096 302.609 30.592V30H300.689V38ZM313.144 38.224C315.368 38.224 316.856 37.168 316.856 35.584C316.856 34.128 316.008 33.52 313.336 32.96C312.2 32.704 311.832 32.496 311.832 32.16C311.832 31.696 312.36 31.376 313.144 31.376C313.848 31.376 314.488 31.744 314.728 32.288L316.488 31.856C316.024 30.608 314.68 29.776 313.144 29.776C311.208 29.776 309.912 30.768 309.912 32.256C309.912 33.584 310.648 34.112 312.968 34.64C314.456 34.928 314.936 35.2 314.936 35.584C314.936 36.208 314.216 36.624 313.144 36.624C312.072 36.624 311.304 36.08 311.24 35.28H309.432C309.496 37.04 310.984 38.224 313.144 38.224ZM322.018 38.224C323.97 38.224 325.634 37.04 326.162 35.28H324.21C323.842 36.08 322.962 36.624 322.018 36.624C320.77 36.624 319.81 35.792 319.634 34.528H326.194L326.354 34.368V34C326.354 31.472 324.626 29.776 322.018 29.776C319.41 29.776 317.682 31.472 317.682 34C317.682 36.528 319.41 38.224 322.018 38.224ZM319.762 32.928C320.13 31.936 320.946 31.376 322.018 31.376C323.09 31.376 323.906 31.936 324.274 32.928H319.762ZM331.342 38.224C332.286 38.224 333.326 37.792 333.934 37.136V38H335.854V30H333.934V30.864C333.326 30.208 332.286 29.776 331.342 29.776C328.846 29.776 327.182 31.472 327.182 34C327.182 36.528 328.846 38.224 331.342 38.224ZM331.534 36.528C330.078 36.528 329.102 35.52 329.102 34C329.102 32.48 330.078 31.472 331.534 31.472C332.974 31.472 333.934 32.48 333.934 34C333.934 35.52 332.974 36.528 331.534 36.528Z"
+              fill="white" />
+          </svg>
+
+        </a>
+      </div>
+    </div>
+
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -464,34 +530,137 @@
   <script>
     var nftObject = [
       {
-        time: "Jan 5, 2020 15:37:25"
+        time: "Jan 5, 2020 15:37:25",
+        sliderNft: "./assets/images/nft/nft1.svg",
+        price: "0.03",
+        soldOut: true,
+        modalTitle: "some title2",
+        modalDescription: `Hey, I'm Glitch, a gaming guru and Metaverse enthusiast! Let me tell you something: In this world, you
+              need to keep yourself sharp and ready for the challenges ahead. So charge your controller and turn on your
+              headset! We'll explore the endless path of this universe together!`,
+
+        modalVideo: "./assets/video/bandicam 2021-08-27 16-15-59-008.mp4",
+        nftLink: "https://opensea.io/",
+
       },
       {
-        time: "Jan 5, 2020 15:37:25"
+        time: "Jan 5, 2020 15:37:25",
+        sliderNft: "./assets/images/nft/nft1.svg",
+        price: "0.03",
+        soldOut: true,
+        modalTitle: "ragac title",
+        modalDescription: `Hey2, I'm Glitch, a gaming guru and Metaverse enthusiast! Let me tell you something: In this world, you
+              need to keep yourself sharp and ready for the challenges ahead. So charge your controller and turn on your
+              headset! We'll explore the endless path of this universe together!`,
+
+        modalVideo: "./assets/video/glitch_1.mp4",
+        nftLink: "https://opensea.io/",
+
       },
       {
-        time: "Feb 10, 2022 5:57:25"
+        time: "Feb 10, 2022 5:57:25",
+        sliderNft: "./assets/images/nft/nft1.svg",
+        price: "0.06",
+        soldOut: false,
+        modalTitle: "ragac title2",
+        modalDescription: `Hey3, I'm Glitch, a gaming guru and Metaverse enthusiast! Let me tell you something: In this world, you
+              need to keep yourself sharp and ready for the challenges ahead. So charge your controller and turn on your
+              headset! We'll explore the endless path of this universe together!`,
+
+        modalVideo: "./assets/video/bandicam 2021-08-27 16-15-59-008.mp4",
+
+        nftLink: "https://opensea.io/",
+
       },
       {
-        time: "Jan 5, 2024 15:37:25"
+        time: "Jan 5, 2024 15:37:25",
+        sliderNft: "./assets/images/nft/nft1.svg",
+        price: "0.03",
+        soldOut: false,
+        modalTitle: "ragac title3",
+        modalDescription: `Hey4, I'm Glitch, a gaming guru and Metaverse enthusiast! Let me tell you something: In this world, you
+              need to keep yourself sharp and ready for the challenges ahead. So charge your controller and turn on your
+              headset! We'll explore the endless path of this universe together!`,
+        modalVideo: "./assets/images/nft/nft1.svg",
+        nftLink: "https://opensea.io/",
+
+
       },
       {
-        time: "Jan 5, 2024 15:37:25"
+        time: "Jan 5, 2024 15:37:25",
+        sliderNft: "./assets/images/nft/nft1.svg",
+        price: "0.03",
+        soldOut: false,
+        modalTitle: "ragac title3",
+        modalDescription: `Hey5, I'm Glitch, a gaming guru and Metaverse enthusiast! Let me tell you something: In this world, you
+              need to keep yourself sharp and ready for the challenges ahead. So charge your controller and turn on your
+              headset! We'll explore the endless path of this universe together!`,
+        modalVideo: "./assets/images/nft/nft1.svg",
+        nftLink: "https://opensea.io/",
+
       },
 
 
     ]
     $(document).ready(function () {
 
+      $(".nft_item").click(function (el) {
+        // var countDownDateTime = new Date(countDownDate).getTime()
+        let id = Number($(this).data("id"))
+        var selectedObject = nftObject[id]
+        var t1 = new Date(selectedObject.time).getTime()
+        var t2 = new Date().getTime()
+        // debugger
+        if (t1 > t2) {
+          return
+        }
+        $(".nftModal .modalTitle").text(selectedObject.modalTitle)
+        $(".nftModal .modalDescription").text(selectedObject.modalDescription)
+        $(".nftModal .nftLink").attr("href", selectedObject.nftLink)
+        debugger
+        $(".nftModal .video").attr("src", selectedObject.modalVideo)
+        $(".nftModal").addClass("d-flex")
+
+        // let data = this.data("id")
+        // if()
+      })
+
+      $(".nftModal_close").click(() => {
+        $(".nftModal").removeClass("d-flex")
+        $(".nftModal").addClass("d-none")
+      })
+
       // var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
 
       // Update the count down every 1 second
-      var setTimer = (element, countDownDate) => {
+      var setTimer = (element, countDownDate, thisItem) => {
         // let t = $( .timeer`)
         // console.log$(t, " $('.timeer').eq(element)")
         var countDownDateTime = new Date(countDownDate).getTime()
         var now = new Date().getTime()
-        if (countDownDateTime < now) return
+        // console.log("add attr1111111")
+
+        var currentObjet = nftObject[element]
+        if (countDownDateTime < now) {
+          // alert("mdah")
+          // debugger
+          $(".nft_item" + (element + 1) + " img").attr("src", currentObjet.sliderNft)
+          console.log("add attr")
+          if (currentObjet.soldOut) {
+            // debugger
+            // $(".nft_item" + (element + 1) + " img"))
+            $(".nft_item" + (element + 1) + " .extraData").addClass("d-none")
+            $(".nft_item" + (element + 1) + " .pricing").html(`<span class="price"> Sold out </span>`)
+          }
+          else {
+            $(".nft_item" + (element + 1) + " .pricing").html(` <span class="price mr-2"> Price </span> <span class="blueColor">${currentObjet.price} eth</span>`)
+          }
+          return
+        }
+        $(".nft_item" + (element + 1) + " .pricing").html(`<span class="price">  </span>`)
+
+
+
         // debugger
         var x = setInterval(function () {
 
@@ -508,6 +677,8 @@
           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
           // Output the result in an element with id="demo"
+          // console.log("add attr1111111")
+
           $(".nft_item" + (element + 1) + " .timeer").text(`${days ? days + "d" : " "}` + " " + `${hours < 10 ? "0" + hours : hours}` + ":"
             + `${minutes < 10 ? "0" + minutes : minutes}` + ":" + `${seconds < 10 ? "0" + seconds : seconds}` + "")
 
@@ -520,11 +691,14 @@
       }
 
 
+
+
       $(".nft_item").each(function (element, el) {
         console.log(this, element, "elemennnn")
+        var thisItem = this
         if (nftObject[element]) {
           // $(".nft_item" + (element + 1) + " .timeer").text("hi")
-          setTimer(element, nftObject[element].time)
+          setTimer(element, nftObject[element].time, thisItem)
         }
         // debugger
         console.log(element)
@@ -573,6 +747,9 @@
 
 
 
+
+
+
     $('.owl-carousel').owlCarousel({
       loop: true,
       margin: 10,
@@ -589,6 +766,16 @@
         }
       }
     })
+
+    $(".nft_item").each(function (el, i) {
+      console.log("hopp", this)
+      // alert(i)
+
+      this.click(function () {
+        // alert(i)
+      })
+    })
+
 
   </script>
 </body>

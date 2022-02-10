@@ -226,6 +226,56 @@ header {
     }
   }
 }
+.nftModal {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.344);
+  width: 100%;
+  z-index: 22;
+  display: flex;
+  justify-content: end;
+  .modal_header {
+    padding: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  &_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100vh - 130px);
+    align-items: center;
+  }
+  &_textBox {
+    padding: 32px;
+    h6 {
+      color: rgba(255, 255, 255, 1);
+      margin-bottom: 16px;
+      font-size: 32px;
+    }
+    p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  &_image {
+    margin-top: 50px;
+    img {
+      max-width: 50%;
+    }
+  }
+}
+
+.nftmodal_content {
+  width: 570px;
+  background: rgba(25, 35, 48, 1);
+  min-height: 100vh;
+}
+
+.pointer {
+  cursor: pointer;
+}
 
 .team {
   &_row {
