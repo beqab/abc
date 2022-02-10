@@ -617,8 +617,10 @@
         $(".nftModal .modalTitle").text(selectedObject.modalTitle)
         $(".nftModal .modalDescription").text(selectedObject.modalDescription)
         $(".nftModal .nftLink").attr("href", selectedObject.nftLink)
-        debugger
+        // debugger
+        // $(".nftModal .video").src = selectedObject.modalVideo
         $(".nftModal .video").attr("src", selectedObject.modalVideo)
+        $(".nftModal video")[0].load()
         $(".nftModal").addClass("d-flex")
 
         // let data = this.data("id")
