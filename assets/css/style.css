@@ -276,6 +276,8 @@ p.wight {
 footer {
   padding-top: 130px;
   padding-bottom: 150px; }
+  footer img {
+    max-width: 100%; }
   footer .footerLink {
     margin-top: 40px;
     display: inline-block; }
@@ -338,6 +340,47 @@ p {
     padding-bottom: 10px; } }
 
 @media only screen and (max-width: 767px) {
+  .homeImg {
+    max-width: 80%; }
+  .rightCircle {
+    max-width: 50%; }
+  .owl-nav {
+    display: none; }
+  .leftCircle {
+    max-width: 50%; }
+  .slider .nft_item {
+    width: 215px;
+    width: auto;
+    height: auto; }
+    .slider .nft_item img {
+      width: 100%; }
+  .nftmodal_content {
+    width: 100%; }
+  .nftSliderWrapper {
+    height: 300px; }
+    .nftSliderWrapper img {
+      max-height: 100%; }
+  .slider {
+    padding-top: 35px;
+    padding-bottom: 30px; }
+  .nftModal .modal_header {
+    padding-top: 12px;
+    padding-bottom: 12px; }
+  .mainSection {
+    min-height: 74vh; }
+  .slider .item {
+    height: auto; }
+  .social {
+    flex-direction: column;
+    align-items: center; }
+    .social > div:first-child {
+      margin-bottom: 20px; }
+  .nftLink {
+    display: block;
+    text-align: center; }
+    .nftLink svg {
+      max-width: 80%;
+      margin: auto; }
   h1 {
     position: relative;
     font-size: 28px; }
@@ -345,6 +388,10 @@ p {
     font-size: 25px; }
   p {
     font-size: 15px; }
+  h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center; }
   .logo img {
     max-height: 50px; }
   header ul {
@@ -354,13 +401,13 @@ p {
     background: black;
     width: 100%;
     text-align: center;
-    top: 70px;
+    top: 61px;
     left: 0;
     padding-left: 0px;
     padding-bottom: 5px;
     padding-bottom: 20px;
     margin-bottom: 0;
-    box-shadow: 1px 11px 20px 0px #006f3657; }
+    box-shadow: 1px 11px 20px 0px #0d284a; }
     header ul a {
       font-size: 20px; }
   header {
