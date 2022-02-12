@@ -534,7 +534,7 @@
 
         <a class="nftLink" href="https://opensea.io/collection/abc-community" target="_blank">
 
-          <svg class="pointer" width="506" height="63" viewBox="0 0 506 63" fill="none"
+          <svg class="pointer modalLink" width="506" height="63" viewBox="0 0 506 63" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <rect width="506" height="63" rx="31.5" fill="#2081E2" />
             <path
@@ -665,8 +665,13 @@
         // let data = this.data("id")
         // if()
       })
+      $(".nftmodal_content").click(function (event) {
+        // debugger
+        event.stopPropagation();
+      })
 
-      $(".nftModal_close").click(() => {
+
+      $(".nftModal_close, .nftModal").click(() => {
         $(".nftModal").removeClass("d-flex")
         $(".nftModal").addClass("d-none")
       })

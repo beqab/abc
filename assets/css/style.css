@@ -132,7 +132,7 @@ header {
     border-radius: 50px;
     position: absolute;
     right: -60px;
-    top: 84px;
+    top: 141px;
     background: #ffffff29 !important;
     display: flex;
     align-items: center;
@@ -146,8 +146,8 @@ header {
     height: 50px;
     border-radius: 50px;
     position: absolute;
-    left: -120px;
-    top: 84px;
+    left: -81px;
+    top: 141px;
     background: #ffffff29 !important;
     display: flex;
     align-items: center;
@@ -162,15 +162,15 @@ header {
   .slider .item {
     height: 260px; }
   .slider .owl-item {
-    padding: 20px 5px; }
+    padding: 50px 5px; }
     .slider .owl-item .item {
       transition: 0.3s; }
       .slider .owl-item .item:hover {
         transform: scale(1.03); }
   .slider .nft_item {
     position: relative;
-    width: 215px;
-    height: 215px; }
+    width: 239px;
+    height: 237px; }
     .slider .nft_item img {
       transition: 0.3s;
       cursor: pointer; }
@@ -241,7 +241,7 @@ header {
       max-width: 50%; }
 
 .nftmodal_content {
-  width: 570px;
+  width: 520px;
   background: #192330;
   min-height: 100vh; }
 
@@ -358,6 +358,18 @@ p {
   font-weight: 500;
   margin-bottom: 30px; }
 
+.nftLink {
+  text-align: center; }
+
+.modalLink {
+  width: calc(100% - 50px);
+  margin: auto; }
+
+video {
+  height: 291px;
+  width: 291px;
+  border-radius: 23px; }
+
 @keyframes example {
   from {
     transform: rotateY(-90deg); }
@@ -413,7 +425,7 @@ p {
     display: block;
     text-align: center; }
     .nftLink svg {
-      max-width: 80%;
+      width: calc(100% - 50px);
       margin: auto; }
   h1 {
     position: relative;
