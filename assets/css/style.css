@@ -488,9 +488,7 @@ video {
     padding-left: 0px;
     padding-bottom: 5px;
     padding-bottom: 20px;
-    margin-bottom: 0;
-    box-shadow: 0px 20px 19px 0px #0d284a3d;
-    box-shadow: 1px 11px 20px 0px #0d284a; }
+    margin-bottom: 0; }
     header ul a {
       font-size: 20px; }
       header ul a:hover {
