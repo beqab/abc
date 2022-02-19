@@ -211,7 +211,7 @@ header {
   position: fixed;
   left: 0px;
   top: 0px;
-  min-height: 100vh;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.344);
   width: 100%;
   z-index: 22;
@@ -243,7 +243,8 @@ header {
 .nftmodal_content {
   width: 520px;
   background: #192330;
-  min-height: 100vh; }
+  min-height: 100vh;
+  overflow: auto; }
 
 .pointer {
   cursor: pointer; }
@@ -363,7 +364,8 @@ p {
 
 .modalLink {
   width: calc(100% - 50px);
-  margin: auto; }
+  margin: auto;
+  padding-bottom: 10px; }
 
 video {
   height: 291px;
