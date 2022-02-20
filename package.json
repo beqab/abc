@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/bitbooknetwork/aog-staking#readme",
   "dependencies": {
+    "react-owl-carousel": "^2.3.3",
     "sass-loader": "^12.4.0"
   },
   "devDependencies": {

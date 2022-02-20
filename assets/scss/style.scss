@@ -492,7 +492,7 @@ video {
 @media only screen and (min-width: 767px) {
   header.scrolling {
     position: fixed;
-    background-color: #000b19;
+    background-color: #000b19d9;
     margin-top: 0px;
     transition: 0.3s;
     padding-top: 20px;
@@ -552,7 +552,27 @@ video {
     padding-bottom: 12px;
   }
   .mainSection {
-    min-height: 74vh;
+    min-height: 84vh;
+  }
+  .mainTitle {
+    transform: translateY(32px);
+  }
+  video {
+    height: 212px;
+    width: 218px;
+    border-radius: 23px;
+  }
+  .slider .timeer {
+    font-size: 26px;
+  }
+  .nftModal_image {
+    margin-top: 25px;
+  }
+  .nftModal_textBox {
+    padding: 20px 32px;
+  }
+  .modalDescription {
+    margin-bottom: 0px !important;
   }
   .slider .item {
     // display: flex;
