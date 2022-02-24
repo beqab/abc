@@ -173,7 +173,8 @@ header {
     height: 237px; }
     .slider .nft_item img {
       transition: 0.3s;
-      cursor: pointer; }
+      cursor: pointer;
+      border-radius: 25px; }
   .slider .timerWrapper {
     position: absolute;
     left: 50%;

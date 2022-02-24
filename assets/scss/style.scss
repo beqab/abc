@@ -229,9 +229,11 @@ header {
     position: relative;
     width: 239px;
     height: 237px;
+
     img {
       transition: 0.3s;
       cursor: pointer;
+      border-radius: 25px;
     }
     // transition: 0.3s;
     &:hover {
