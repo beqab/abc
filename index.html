@@ -761,7 +761,7 @@
           // alert("mdah")
           // debugger
           $(".nft_item" + (element + 1) + " img").attr("src", currentObjet.sliderNft)
-          console.log("add attr")
+          // console.log("add attr")
           if (currentObjet.soldOut) {
             // debugger
             // $(".nft_item" + (element + 1) + " img"))
@@ -810,14 +810,14 @@
 
 
       $(".nft_item").each(function (element, el) {
-        console.log(this, element, "elemennnn")
+        // console.log(this, element, "elemennnn")
         var thisItem = this
         if (nftObject[element]) {
           // $(".nft_item" + (element + 1) + " .timeer").text("hi")
           setTimer(element, nftObject[element].time, thisItem)
         }
         // debugger
-        console.log(element)
+        // console.log(element)
       });
 
 
@@ -884,7 +884,7 @@
     })
 
     $(".nft_item").each(function (el, i) {
-      console.log("hopp", this)
+      // console.log("hopp", this)
       // alert(i)
 
       this.click(function () {
