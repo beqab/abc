@@ -680,107 +680,36 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script>
-    var nftObject = [
-      {
-        time: "Jan 5, 2020 15:37:25",
-        sliderNft: "./assets/images/nft/nft1.svg",
-        price: "0.03",
-        soldOut: true,
-        modalTitle: "some title2",
-        modalDescription: `Hey, I'm Glitch, a gaming guru and Metaverse enthusiast! Let me tell you something: In this world, you
-              need to keep yourself sharp and ready for the challenges ahead. So charge your controller and turn on your
-              headset! We'll explore the endless path of this universe together!`,
+    let nftObject = [];
+    let apiURL = 'https://api.abccommunity.io/api/collections/nfts/entries?filter[{published}:{is}]={true}&fields=api_url,date,description,expiry_date,nft_image,ntf_link,ntf_price,published,slug,sold_out,title,status';
 
-        modalVideo: "./assets/video/bandicam 2021-08-27 16-15-59-008.mp4",
-        nftLink: "https://opensea.io/",
+    function transformApiResponse(response) {
+      response.data.forEach(value => {
+        let date = new Date(value.expiry_date);
+        let data = {
+          time: date.toString(),
+          sliderNft: value.nft_image,
+          price: value.ntf_price,
+          soldOut: value.sold_out,
+          modalTitle: value.title,
+          modalDescription: value.description,
+          modalVideo: false,
+          nftLink: value.ntf_link,
+        }
+        nftObject.push(data)
+      });
+    }
 
-      },
-      {
-        time: "Mar 1, 2022 15:37:25",
-        sliderNft: "./assets/images/nft/nft1.svg",
-        price: "0.03",
-        soldOut: true,
-        modalTitle: "ragac title",
-        modalDescription: `Hey2, I'm Glitch, a gaming guru and Metaverse enthusiast! Let me tell you something: In this world, you
-              need to keep yourself sharp and ready for the challenges ahead. So charge your controller and turn on your
-              headset! We'll explore the endless path of this universe together!`,
+    $.ajaxSetup({
+      async: false,
+    });
 
-        modalVideo: "./assets/video/glitch_1.mp4",
-        nftLink: "https://opensea.io/",
+    $.getJSON(apiURL).done(function (response, textStatus) {
+      if (textStatus === 'success') {
+        transformApiResponse(response);
+      }
+    });
 
-      },
-      {
-        time: "Jan 5, 2020 15:37:25",
-        sliderNft: "./assets/images/nft/nft1.svg",
-        price: "0.03",
-        soldOut: true,
-        modalTitle: "some title2",
-        modalDescription: `Hey, I'm Glitch, a gaming guru and Metaverse enthusiast! Let me tell you something: In this world, you
-              need to keep yourself sharp and ready for the challenges ahead. So charge your controller and turn on your
-              headset! We'll explore the endless path of this universe together!`,
-
-        modalVideo: "./assets/video/bandicam 2021-08-27 16-15-59-008.mp4",
-        nftLink: "https://opensea.io/",
-
-      },
-      {
-        time: "Feb 30, 2022 5:57:25",
-        sliderNft: "./assets/images/nft/nft1.svg",
-        price: "0.06",
-        soldOut: false,
-        modalTitle: "ragac title2",
-        modalDescription: `Hey3, I'm Glitch, a gaming guru and Metaverse enthusiast! Let me tell you something: In this world, you
-              need to keep yourself sharp and ready for the challenges ahead. So charge your controller and turn on your
-              headset! We'll explore the endless path of this universe together!`,
-
-        modalVideo: "./assets/video/bandicam 2021-08-27 16-15-59-008.mp4",
-
-        nftLink: "https://opensea.io/",
-
-      },
-      {
-        time: "Jan 5, 2024 15:37:25",
-        sliderNft: "./assets/images/nft/nft1.svg",
-        price: "0.03",
-        soldOut: false,
-        modalTitle: "ragac title3",
-        modalDescription: `Hey4, I'm Glitch, a gaming guru and Metaverse enthusiast! Let me tell you something: In this world, you
-              need to keep yourself sharp and ready for the challenges ahead. So charge your controller and turn on your
-              headset! We'll explore the endless path of this universe together!`,
-        modalVideo: "./assets/images/nft/nft1.svg",
-        nftLink: "https://opensea.io/",
-
-
-      },
-      {
-        time: "Jan 5, 2024 15:37:25",
-        sliderNft: "./assets/images/nft/nft1.svg",
-        price: "0.03",
-        soldOut: false,
-        modalTitle: "ragac title3",
-        modalDescription: `Hey5, I'm Glitch, a gaming guru and Metaverse enthusiast! Let me tell you something: In this world, you
-              need to keep yourself sharp and ready for the challenges ahead. So charge your controller and turn on your
-              headset! We'll explore the endless path of this universe together!`,
-        modalVideo: "./assets/images/nft/nft1.svg",
-        nftLink: "https://opensea.io/",
-
-      },
-      {
-        time: "Jan 5, 2024 15:37:25",
-        sliderNft: "./assets/images/nft/nft1.svg",
-        price: "0.03",
-        soldOut: false,
-        modalTitle: "ragac title3",
-        modalDescription: `Hey5, I'm Glitch, a gaming guru and Metaverse enthusiast! Let me tell you something: In this world, you
-              need to keep yourself sharp and ready for the challenges ahead. So charge your controller and turn on your
-              headset! We'll explore the endless path of this universe together!`,
-        modalVideo: "./assets/images/nft/nft1.svg",
-        nftLink: "https://opensea.io/",
-
-      },
-
-
-    ]
     $(document).ready(function () {
 
       $(".nft_item").click(function (el) {
@@ -794,7 +723,7 @@
           return
         }
         $(".nftModal .modalTitle").text(selectedObject.modalTitle)
-        $(".nftModal .modalDescription").text(selectedObject.modalDescription)
+        $(".nftModal .modalDescription").html(selectedObject.modalDescription)
         $(".nftModal .nftLink").attr("href", selectedObject.nftLink)
         // debugger
         // $(".nftModal .video").src = selectedObject.modalVideo
